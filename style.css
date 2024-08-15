@@ -1,0 +1,81 @@
+body{
+    font-family: roboto ;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure photos are above the video */
+    text-align: center; /* Center photos if desired */
+}
+
+.overlay-photo {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Spacing between photos */
+    display: inline-block; /* Align photos horizontally */
+}
+
+
+.footer-links .footer-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-links a {
+    color: grey; 
+    margin-bottom: 5px; /* Adds spacing between the links */
+    text-decoration: none; /* Removes the underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+#services button[type="submit"] {
+    background-color: rgb(39, 39, 38);
+    color: black;
+    padding: 15px;
+    border: none; /* Removes the default border */
+    outline: none; /* Removes the blue focus outline */
+    box-shadow: none; /* Removes any additional browser-specific outlines */
+}
+
+.btn-custom {
+    background-color: grey;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px; /*padding to make the button bigger */
+    border: none; /* Remove any default border */
+    border-radius: 5px; /* Add slight rounding to the edges */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.btn-custom:hover {
+    background-color: #6c757d; /* Slightly darker grey on hover */
+    color: white;
+}
+
